@@ -57,11 +57,12 @@ img {
 .container {
 	width: 93%;
 	margin: 0 auto;
+	max-width: 960px;
 }
 
 h1 {
 	font-size: 2.4rem;
-	margin-top: 2em;
+	padding-top: 2em;
 	margin-bottom: 1em;
 	color: var(--color-primary);
 }
@@ -127,6 +128,7 @@ figure {
 	padding: 0.2em 0.5em;
 	border-radius: 4px;
 	font-weight: 400;
+	cursor: pointer;
 }
 
 .cart-cost {
@@ -150,6 +152,8 @@ h2 {
 
 form {
 	position: relative;
+	max-width: 465px;
+	margin: 0 auto;
 }
 
 .contact-form {
@@ -263,5 +267,76 @@ footer {
 
 	.form-group--flex {
 		width: 100%;
+	}
+}
+
+@media (min-width: 1024px) {
+	.container--grid {
+		display: grid;
+		grid-gap: 10rem;
+		grid-template-columns: repeat(2, 1fr);
+		margin-top: 5em;
+	}
+
+	.cart {
+		order: 1;
+	}
+}
+
+@media (min-width: 1440px) {
+	.container--grid {
+		align-items: start;
+	}
+
+	h1 {
+		font-size: 3.6rem;
+	}
+
+	h2 {
+		font-size: 1.8rem;
+	}
+
+	.form__label {
+		font-size: 1.2rem;
+	}
+
+	.form__input {
+		font-size: 1.6rem;
+	}
+
+	.save-later {
+		font-size: 1.2rem;
+	}
+
+	.cart-purchase__name {
+		font-size: 1.6rem;
+	}
+
+	.cart-purchase__price {
+		font-size: 1.6rem;
+	}
+
+	.cart-purchase__old-price {
+		font-size: 1.2rem;
+	}
+
+	.cart-cost__label {
+		font-size: 1.8rem;
+	}
+
+	.cart-cost__value {
+		font-size: 1.4rem;
+	}
+}
+
+@media (min-width: 1920px) {
+	body {
+		height: 100vh;
+	}
+}
+
+@media (min-width: 2560px) {
+	h1 {
+		padding-top: 6em;
 	}
 }

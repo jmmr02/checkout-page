@@ -27,183 +27,189 @@
         <div class="container">
             <h1>Checkout</h1>
 
-            <!-- Start of cart  -->
-            <div class="cart">
-                <div class="cart-purchase">
-                    <figure class="cart-purchase__image">
-                        <img src="./images/photo1.png" alt="A picture of a green vintage Backbag">
-                    </figure>
+            <!-- Start of container--grid -->
+            <div class="container--grid">
+                <!-- Start of cart  -->
+                <div class="cart">
+                    <div class="cart-purchase">
+                        <figure class="cart-purchase__image">
+                            <img src="./images/photo1.png" alt="A picture of a green vintage Backbag">
+                        </figure>
 
-                    <div class="cart-purchase__details">
-                        <p class="cart-purchase__name">Vintage Backbag</p>
+                        <div class="cart-purchase__details">
+                            <p class="cart-purchase__name">Vintage Backbag</p>
 
-                        <p class="cart-purchase__price">$54.99 <span class="cart-purchase__old-price">$94.99</span></p>
+                            <p class="cart-purchase__price">$54.99 <span class="cart-purchase__old-price">$94.99</span>
+                            </p>
 
-                        <div class="cart-purchase__quantity">
-                            <span class="cart-purchase__quantity-operator">-</span>
-                            <span class="quantity-number">1</span>
-                            <span class="cart-purchase__quantity-operator">+</span>
+                            <div class="cart-purchase__quantity">
+                                <span class="cart-purchase__quantity-operator">-</span>
+                                <span class="quantity-number">1</span>
+                                <span class="cart-purchase__quantity-operator">+</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="cart-purchase">
+                        <figure class="cart-purchase__image">
+                            <img src="./images/photo2.png" alt="A picture of a Levi brand shoes">
+                        </figure>
+
+                        <div class="cart-purchase__details">
+                            <p class="cart-purchase__name">Levi Shoes</p>
+
+                            <p class="cart-purchase__price">$74.99 <span class="cart-purchase__old-price">$124.99</span>
+                            </p>
+
+                            <div class="cart-purchase__quantity">
+                                <span class="cart-purchase__quantity-operator">-</span>
+                                <span class="quantity-number">1</span>
+                                <span class="cart-purchase__quantity-operator">+</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="cart-cost">
+                        <div class="cart-cost__shipping">
+                            <p class="cart-cost__label">Shipping</p>
+                            <p class="cart-cost__value">$19</p>
+                        </div>
+
+                        <div class="cart-cost__shipping">
+                            <p class="cart-cost__label">Total</p>
+                            <p class="cart-cost__value">$148.98</p>
                         </div>
                     </div>
                 </div>
+                <!-- End of cart  -->
 
-                <div class="cart-purchase">
-                    <figure class="cart-purchase__image">
-                        <img src="./images/photo2.png" alt="A picture of a Levi brand shoes">
-                    </figure>
+                <!-- Start of form section  -->
+                <section class="form-section">
+                    <form action="">
+                        <!-- Start of contact-form  -->
+                        <div class="contact-form">
+                            <h2>Contact Information</h2>
 
-                    <div class="cart-purchase__details">
-                        <p class="cart-purchase__name">Levi Shoes</p>
+                            <!-- Input field for email address -->
+                            <div class="form-group">
+                                <label for="email" class="form__label">Email</label>
 
-                        <p class="cart-purchase__price">$74.99 <span class="cart-purchase__old-price">$124.99</span></p>
+                                <div class="input-container">
+                                    <span class="material-icons">
+                                        email
+                                    </span>
+                                    <input type="email" name="email" id="email" placeholder="Enter your email..."
+                                        class="form__input" required minlength="10" maxlength="30">
+                                </div>
+                            </div>
 
-                        <div class="cart-purchase__quantity">
-                            <span class="cart-purchase__quantity-operator">-</span>
-                            <span class="quantity-number">1</span>
-                            <span class="cart-purchase__quantity-operator">+</span>
-                        </div>
-                    </div>
-                </div>
+                            <!-- Input field for telephone/phone number  -->
+                            <div class="form-group">
+                                <label for="phone" class="form__label">Phone</label>
 
-                <div class="cart-cost">
-                    <div class="cart-cost__shipping">
-                        <p>Shipping</p>
-                        <p>$19</p>
-                    </div>
-
-                    <div class="cart-cost__shipping">
-                        <p>Total</p>
-                        <p>$148.98</p>
-                    </div>
-                </div>
-            </div>
-            <!-- End of cart  -->
-
-            <!-- Start of form section  -->
-            <section>
-                <form action="">
-                    <!-- Start of contact-form  -->
-                    <div class="contact-form">
-                        <h2>Contact Information</h2>
-
-                        <!-- Input field for email address -->
-                        <div class="form-group">
-                            <label for="email" class="form__label">Email</label>
-
-                            <div class="input-container">
-                                <span class="material-icons">
-                                    email
-                                </span>
-                                <input type="email" name="email" id="email" placeholder="Enter your email..."
-                                    class="form__input" required minlength="10" maxlength="30">
+                                <div class="input-container">
+                                    <span class="material-icons">
+                                        call
+                                    </span>
+                                    <input type="text" name="phone" id="phone" placeholder="Enter your phone..."
+                                        class="form__input" required minlength="11" max="20">
+                                </div>
                             </div>
                         </div>
+                        <!-- End of contact-form  -->
 
-                        <!-- Input field for telephone/phone number  -->
-                        <div class="form-group">
-                            <label for="phone" class="form__label">Phone</label>
+                        <!-- Start of address-form  -->
+                        <div class="address-form">
+                            <h2>Shipping Address</h2>
 
-                            <div class="input-container">
-                                <span class="material-icons">
-                                    call
-                                </span>
-                                <input type="text" name="phone" id="phone" placeholder="Enter your phone..."
-                                    class="form__input" required minlength="11" max="20">
+                            <!-- Input field for full name  -->
+                            <div class="form-group">
+                                <label for="name" class="form__label">Full Name</label>
+
+                                <div class="input-container">
+                                    <span class="material-icons">
+                                        account_circle
+                                    </span>
+                                    <input type="text" name="name" id="name" placeholder="Rodney Cotton"
+                                        class="form__input  form__input--bold" required minlength="10" maxlength="60">
+                                </div>
                             </div>
-                        </div>
-                    </div>
-                    <!-- End of contact-form  -->
 
-                    <!-- Start of address-form  -->
-                    <div class="address-form">
-                        <h2>Shipping Address</h2>
+                            <!-- Input field for user address  -->
+                            <div class="form-group">
+                                <label for="address" class="form__label">Address</label>
 
-                        <!-- Input field for full name  -->
-                        <div class="form-group">
-                            <label for="name" class="form__label">Full Name</label>
-
-                            <div class="input-container">
-                                <span class="material-icons">
-                                    account_circle
-                                </span>
-                                <input type="text" name="name" id="name" placeholder="Rodney Cotton"
-                                    class="form__input  form__input--bold" required minlength="10" maxlength="60">
+                                <div class="input-container">
+                                    <span class="material-icons">
+                                        home
+                                    </span>
+                                    <input type="text" name="address" id="address" placeholder="Your address.."
+                                        class="form__input" required minlength="10" maxlength="100">
+                                </div>
                             </div>
-                        </div>
 
-                        <!-- Input field for user address  -->
-                        <div class="form-group">
-                            <label for="address" class="form__label">Address</label>
-
-                            <div class="input-container">
-                                <span class="material-icons">
-                                    home
-                                </span>
-                                <input type="text" name="address" id="address" placeholder="Your address.."
-                                    class="form__input" required minlength="10" maxlength="100">
-                            </div>
-                        </div>
-
-                        <!-- Input field for user city location  -->
-                        <div class="form-group">
-                            <label for="city" class="form__label">Your City</label>
-
-                            <div class="input-container">
-                                <span class="material-icons">
-                                    location_city
-                                </span>
-                                <input type="text" name="city" id="city" placeholder="Your city.." class="form__input"
-                                    required minlength="10" max="100">
-                            </div>
-                        </div>
-
-                        <div class="international-details">
-
-                            <!-- Input field for user country location  -->
-                            <div class="form-group  form-group--flex">
-                                <label for="country" class="form__label">Country</label>
+                            <!-- Input field for user city location  -->
+                            <div class="form-group">
+                                <label for="city" class="form__label">Your City</label>
 
                                 <div class="input-container">
                                     <span class="material-icons">
                                         location_city
                                     </span>
-                                    <select name="country" id="country" class="form__input" required>
-                                        <option value="">Your country..</option>
-                                        <option value="philippines">Philippines</option>
-                                        <option value="usa">United States</option>
-                                        <option value="japan">Japan</option>
-                                    </select>
+                                    <input type="text" name="city" id="city" placeholder="Your city.."
+                                        class="form__input" required minlength="10" max="100">
                                 </div>
                             </div>
 
-                            <!-- Input field for user location's postal code  -->
-                            <div class="form-group form-group--flex">
-                                <label for="postal-code" class="form__label">Postal Code</label>
+                            <div class="international-details">
 
-                                <div class="input-container">
-                                    <span class="material-icons">
-                                        folder
-                                    </span>
-                                    <input type="text" name="postal-code" id="postal-code"
-                                        placeholder="Your postal code.." class="form__input  form__input--postal"
-                                        required>
+                                <!-- Input field for user country location  -->
+                                <div class="form-group  form-group--flex">
+                                    <label for="country" class="form__label">Country</label>
+
+                                    <div class="input-container">
+                                        <span class="material-icons">
+                                            location_city
+                                        </span>
+                                        <select name="country" id="country" class="form__input" required>
+                                            <option value="">Your country..</option>
+                                            <option value="philippines">Philippines</option>
+                                            <option value="usa">United States</option>
+                                            <option value="japan">Japan</option>
+                                        </select>
+                                    </div>
+                                </div>
+
+                                <!-- Input field for user location's postal code  -->
+                                <div class="form-group form-group--flex">
+                                    <label for="postal-code" class="form__label">Postal Code</label>
+
+                                    <div class="input-container">
+                                        <span class="material-icons">
+                                            folder
+                                        </span>
+                                        <input type="text" name="postal-code" id="postal-code"
+                                            placeholder="Your postal code.." class="form__input  form__input--postal"
+                                            required>
+                                    </div>
                                 </div>
                             </div>
-                        </div>
 
-                        <!-- Checkbox to tick wether the user wants the site to remember his next visit  -->
-                        <div class="form-group checkbox-group">
-                            <input type="checkbox" name="save" id="save" class="form-checkbox">
-                            <label for="save" class="save-later">Save this information for next time</label>
-                        </div>
+                            <!-- Checkbox to tick wether the user wants the site to remember his next visit  -->
+                            <div class="form-group checkbox-group">
+                                <input type="checkbox" name="save" id="save" class="form-checkbox">
+                                <label for="save" class="save-later">Save this information for next time</label>
+                            </div>
 
-                        <!-- Button for submitting  -->
-                        <button type="submit" class="button">Continue</button>
-                    </div>
-                    <!-- End of address-form  -->
-                </form>
-            </section>
-            <!-- End of form section  -->
+                            <!-- Button for submitting  -->
+                            <button type="submit" class="button">Continue</button>
+                        </div>
+                        <!-- End of address-form  -->
+                    </form>
+                </section>
+                <!-- End of form section  -->
+            </div>
+            <!-- End of container--grid  -->
         </div>
         <!-- End of container  -->
     </main>
